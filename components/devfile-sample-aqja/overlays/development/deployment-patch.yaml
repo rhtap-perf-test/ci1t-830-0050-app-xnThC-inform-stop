@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-aqja
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/stonesoup_perfscale/ci1t-830-0050-tenant/ci1t-830-0050-app/devfile-sample-aqja@sha256:225248313f51439a177caa2f17b856c37a21142d7dafb6907d84a5b5a7580833
+        name: my-nodejs
+        resources: {}
+status: {}
